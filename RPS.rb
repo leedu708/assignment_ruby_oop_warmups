@@ -27,9 +27,9 @@ class Player
   def computer
     @choice = rand(1..3)
 
-    puts "The computer has chosen rock" if @choice == "1"
-    puts "The computer has chosen paper" if @choice == "2"
-    puts "The computer has chosen scissor" if @choice == "3"
+    puts "The computer has chosen rock" if @choice == 1
+    puts "The computer has chosen paper" if @choice == 2
+    puts "The computer has chosen scissor" if @choice == 3
 
     @choice
   end
@@ -46,9 +46,9 @@ class CheckWinner
     @result = choice1 * choice2
 
     puts "It's a draw!" if [1, 4, 9].include?(@result)
-    puts "Paper beats rock, paper wins!" if @result == "2"
-    puts "Rock beats scissor, rock wins!" if @result == "3"
-    puts "Scissor beats paper, scissor wins!" if @result =="6"
+    puts "Paper beats rock, paper wins!" if @result == 2
+    puts "Rock beats scissor, rock wins!" if @result == 3
+    puts "Scissor beats paper, scissor wins!" if @result == 6
 
     @result
   end
